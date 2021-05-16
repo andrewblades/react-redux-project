@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# 1 Getting Started #
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Initialized the react application
+- Deleted the unneeded files
+- Basic organization of the components ( in this case only 2 )
+- Getting the Redux store ready 
+- Basic planning of the redux part 
 
-## Available Scripts
 
-In the project directory, you can run:
+# 2 Creating the actions and reducers for Redux #
 
-### `npm start`
+- Creating the actions and reducers in Redux
+- Adding the reducer in the store 
+- Initializing a fields component that has all the details for each field added
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# 3 Creating the Popup and the List components #
 
-### `npm test`
+- The popup has all the functionality to add all the fields with types and conditions
+- The list displays all the fields with all the conditions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 4 The Popup component #
 
-### `npm run build`
+- With the help of useState, we made a bunch of variables that get all the needed information from the user, and after that with a button click we dispach all the new information in redux
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Also used a checker to see wich type was selected and with that display the conditions and the submit button
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 5 The List #
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Getting all the Redux state with useSelector and using it to display all the fields 
 
-### `npm run eject`
+- Having an input to get the information from the user and checker to see if the input is within the conditions.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# 6 The design # 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Using Sass we made a nicer interface, instead of regular css 
