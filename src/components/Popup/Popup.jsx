@@ -30,57 +30,104 @@ function Popup() {
 
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Name your input
+        <div className='popupContainer'>
+            <form className='popupForm' onSubmit={handleSubmit}>
+                <div>
+                    <div className='boxes'>
+                        <label className='label' >
+                            Name your input
+                    </label>
+                    </div>
+                </div>
+                <div className='boxes'>
                     <input type="text" value={name} onChange={(e) => {
                         setName(e.target.value)
                     }} />
-                </label>
-                <label>
-                    Type
-                <select value={type} onChange={(e) => setType(e.target.value)}>
+                </div>
+
+
+                <div>
+                    <div className='boxes'>
+                        <label className='label'>
+                            Type
+                     </label>
+                    </div>
+                </div>
+                <div className='boxes'>
+                    <select value={type} onChange={(e) => setType(e.target.value)}>
                         <option value='text'>text</option>
                         <option value='number'>number</option>
                         <option value='email'>email</option>
                         <option value='date'>date</option>
                     </select>
-                </label>
-                {type === 'number' ?
-                    <div>
-                        <label>Min</label>
-                        <input type="number" value={cond1} onChange={(e) => setCond1(e.target.value)} />
-                        <label>Max</label>
-                        <input type="number" value={cond2} onChange={(e) => setCond2(e.target.value)} />
+                </div>
 
-                        <button onClick={handleSubmit}>Submit</button>
-                    </div>
-                    : type === 'text' ?
+                <div>
+                    {type === 'number' ?
                         <div>
-                            <label>Min length</label>
-                            <input type="number" value={cond1} onChange={(e) => setCond1(e.target.value)} />
-                            <label>Max length</label>
-                            <input type="number" value={cond2} onChange={(e) => setCond2(e.target.value)} />
-
-                            <button onClick={handleSubmit}>Submit</button>
-                        </div> :
-                        type === 'email' ?
+                            <div className='boxes'>
+                                <label className='label' >Min</label>
+                            </div>
+                            <div className='boxes'>
+                                <input type="number" value={cond1} onChange={(e) => setCond1(e.target.value)} />
+                            </div>
+                            <div className='boxes'>
+                                <label className='label' >Max</label>
+                            </div>
+                            <div className='boxes'>
+                                <input type="number" value={cond2} onChange={(e) => setCond2(e.target.value)} />
+                            </div>
+                            <div className='boxes'>
+                                <button className='Btn' onClick={handleSubmit}>Submit</button>
+                            </div>
+                        </div>
+                        : type === 'text' ?
                             <div>
-                                <label>Size</label>
-                                <input type="size" value={cond1} onChange={(e) => setCond1(e.target.value)} />
-                                <button onClick={handleSubmit}>Submit</button>
+                                <div className='boxes'>
+                                    <label className='label' >Min length</label>
+                                </div>
+                                <div className='boxes'>
+                                    <input type="number" value={cond1} onChange={(e) => setCond1(e.target.value)} />
+                                </div>
+                                <div className='boxes'>
+                                    <label className='label' >Max length</label>
+                                </div>
+                                <div className='boxes'>
+                                    <input type="number" value={cond2} onChange={(e) => setCond2(e.target.value)} />
+                                </div>
+                                <div className='boxes'>
+                                    <button className='Btn' onClick={handleSubmit}>Submit</button>
+                                </div>
                             </div> :
-                            type === 'date' ?
+                            type === 'email' ?
                                 <div>
-                                    <label>Start Date:</label>
-                                    <input type="date" value={cond1} onChange={(e) => setCond1(e.target.value)} />
-                                    <button onClick={handleSubmit}>Submit</button>
+                                    <div className='boxes'>
+                                        <label className='label' >Size</label>
+                                    </div>
+                                    <div className='boxes'>
+                                        <input type="size" value={cond1} onChange={(e) => setCond1(e.target.value)} />
+                                    </div>
+                                    <div className='boxes'>
+                                        <button className='Btn' onClick={handleSubmit}>Submit</button>
+                                    </div>
                                 </div> :
-                                null
-                }
+                                type === 'date' ?
+                                    <div>
+                                        <div className='boxes'>
+                                            <label className='label' >Start Date:</label>
+                                        </div>
+                                        <div className='boxes'>
+                                            <input type="date" value={cond1} onChange={(e) => setCond1(e.target.value)} />
+                                        </div>
+                                        <div className='boxes'>
+                                            <button className='Btn' onClick={handleSubmit}>Submit</button>
+                                        </div>
+                                    </div> :
+                                    null
+                    }
+                </div>
             </form>
-        </div>
+        </div >
     )
 }
 

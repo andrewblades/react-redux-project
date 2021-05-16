@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './App.css';
+import './Sass/App.css';
 import List from './components/List/List';
 import Popup from './components/Popup/Popup';
 
@@ -14,12 +14,13 @@ function App() {
 
   return (
     <div className="App">
-
-      <button onClick={() => setAddField(!addField)}>Add Field?</button>
-      {addField ?
-        <Popup />
-        : null
-      } <List />
+      <div className='bigContainer'>
+        <button className='addBtn' onClick={() => setAddField(!addField)}>Add Field?</button>
+        {addField ?
+          <Popup />
+          : null
+        } <List />
+      </div>
     </div>
   );
 }

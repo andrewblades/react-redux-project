@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.App .bigContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .bigContainer .addBtn {
+  margin-left: 50%;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  outline: inherit;
+  padding-left: 16px;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2, #4801ff 100%);
+  color: #eeeeee;
+  -webkit-transition: border 0.5s ease-in;
+  transition: border 0.5s ease-in;
+}
+
+.App .bigContainer .addBtn:hover {
+  border: 25px solid #e9e6e6;
+  border-radius: 4px;
+  color: #1a1919;
+  font-size: 0px;
+}
+
+.App .popupContainer {
+  margin-left: 50%;
+}
+
+.App .popupContainer .popupForm {
+  margin-top: 1.5rem;
+  background-color: #e9e6e6;
+  border: 5px solid #e9e6e6;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 200px;
+}
+
+.App .popupContainer label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #181717;
+  margin-top: 5px;
+}
+
+.App .popupContainer .boxes {
+  padding-top: 10px;
+}
+
+.App .popupContainer input {
+  width: 138px;
+  height: 30px;
+  padding-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.App .popupContainer select {
+  width: 148px;
+  height: 30px;
+}
+
+.App .popupContainer .Btn {
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  outline: inherit;
+  padding-left: 16px;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-image: linear-gradient(-255deg, #ac32e4 0%, #7918f2, #4801ff 100%);
+  color: #eeeeee;
+  -webkit-transition: border 0.5s ease-in;
+  transition: border 0.5s ease-in;
+}
+
+.App .listContainer {
+  margin-left: 50%;
+  margin-top: 5%;
+}
+
+.App .listContainer .boxes {
+  padding-top: 10px;
+}
+
+.App .listContainer label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #181717;
+  margin-top: 5px;
+}
+
+.App .listContainer input {
+  width: 138px;
+  height: 30px;
+  padding-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+/*# sourceMappingURL=App.css.map */
